@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <carousel class="product-slider" :items="3" :dots="false" :nav="false" :autoplay="true">
+                    <carousel class="product-slider" :items="3" :dots="false" :nav="false" :autoplay="false">
                         <div class="product-item">
                             <div class="pi-pic">
                                 <img src="img/products/women-2.jpg" alt="" />
@@ -13,15 +13,15 @@
                                         <a href="#"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view">
-                                        <a href="product.html">+ Quick View</a>
+                                        <a href="#">+ Quick View</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Shoes</div>
-                                <a href="#">
+                                <router-link to="/product">
                                     <h5>Guangzhou sweater</h5>
-                                </a>
+                                </router-link>
                                 <div class="product-price">$13.00</div>
                             </div>
                         </div>
